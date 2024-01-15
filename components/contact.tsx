@@ -38,6 +38,7 @@ import {
  
   import { PiGraduationCap, PiTreeStructureLight } from "react-icons/pi";
 import Loader from "./loader";
+import { PuffLoader } from "react-spinners";
  
 
   const formSchema = z.object({
@@ -211,7 +212,7 @@ import Loader from "./loader";
             </FormItem>
           )}
         />
-        <Button variant={"rose"} type="submit">{isloding ?  "sending...":"Send Message"}</Button>
+        <Button variant={"rose"} type="submit">{isloding ?    <PuffLoader loading={isloding} size={100} color="green"   />+"sending...":"Send Message"}</Button>
       </form>
     </Form>
         </CardContent>
