@@ -212,7 +212,7 @@ import { PuffLoader } from "react-spinners";
             </FormItem>
           )}
         />
-        <Button variant={"rose"} type="submit">{isloding ?    <PuffLoader loading={isloding} size={100} color="green"   />+"sending...":"Send Message"}</Button>
+        <Button variant={"rose"} type="submit">{isloding ? "sending...":"Send Message"}</Button>
       </form>
     </Form>
         </CardContent>
