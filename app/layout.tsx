@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import { ThemeProvider } from "@/components/theme-provider"
+import { cn } from '@/lib/utils'
+import { Toaster } from '@/components/ui/toaster'
+const font = Poppins({ weight:[ '100','200','300','400','500','600','700','800','900'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +18,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+          <body className={cn(
+          font.className,
+          "bg-white dark:bg-[#0c0a09]"
+        )}>
+   <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+          storageKey="discord-theme"
+        >  
+        {children} 
+        <Toaster />
+         </ThemeProvider>
+
+         </body>
+        
     </html>
   )
 }
