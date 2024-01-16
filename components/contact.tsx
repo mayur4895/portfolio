@@ -12,6 +12,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { IoLocationOutline, IoMail } from "react-icons/io5";
 import { MdMail, MdOutlineLocalPhone, MdPin } from "react-icons/md";
+ 
 import { Separator } from "./ui/separator";
 import { FaDiscord ,FaSpotify} from "react-icons/fa";
 import { useToast } from "@/components/ui/use-toast"
@@ -143,9 +144,9 @@ import { PuffLoader } from "react-spinners";
 
 
               <div className="w-full"> 
-              <Card className="p-3 w-auto relative h-auto shadow-lg">
-                <CardTitle>Send Mail</CardTitle>
-                <CardDescription>Send mail to connect with me</CardDescription>
+              <Card className="p-3 py-6 w-auto relative h-auto shadow-lg">
+                <CardTitle>Send Message</CardTitle>
+                <CardDescription className="mt-1">send message to connect with me.</CardDescription>
                 <br />
                 <CardContent>  
                 <Form {...form}>

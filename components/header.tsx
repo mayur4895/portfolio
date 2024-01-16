@@ -46,7 +46,7 @@ import Education from '@/components/about';
       <Menubar className="p-8   font-thin justify-between flex border-b-0">
         <div className="flex gap-4">
         <Avatar>
-  <AvatarImage src="profile.png" />
+  <AvatarImage src="m.png"  className='  object-contain  p-1    bg-black dark:bg-[#222] border-white'  />
   <AvatarFallback>M</AvatarFallback> 
 </Avatar>
 <ModeToggle/>

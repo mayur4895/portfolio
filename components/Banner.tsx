@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
  
   import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
- 
+  import { BsTwitterX } from "react-icons/bs";
 import { ModeToggle } from "./mode-toggle";
 import Image from "next/image";
 import { Button } from "./ui/button";
@@ -35,7 +35,7 @@ import { RxDownload } from "react-icons/rx";
   <ul className="flex flex-col gap-4">
         <li className="hover:scale-110 transition"><a href="https://github.com/mayur4895"><RiGithubFill size={20}/></a></li>
         <Separator/>
-        <li className="hover:scale-110 transition"><a href="https://twitter.com/Mayur4895"><RiTwitterFill size={20}/></a></li>
+        <li className="hover:scale-110 transition"><a href="https://twitter.com/Mayur4895"><BsTwitterX size={20}/></a></li>
         <Separator/>
         <li className="hover:scale-110 transition"><a href="https://www.linkedin.com/in/webdevelopermayur4895"><RiLinkedinFill size={20}/></a></li>
         
