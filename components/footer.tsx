@@ -3,7 +3,7 @@ import Image from "next/image";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
 import { BsTwitterX } from "react-icons/bs";
 import { RiGithubFill, RiLinkedinFill } from "react-icons/ri";
-import { Separator } from "./ui/separator";
+ 
 const Footer = ()=>{
     return(<>
       <div className=" mt-12 relative w-full   py-24 h-64 flex justify-center items-center text-white bg-[#111] dark:bg-[#111]">
@@ -18,7 +18,7 @@ const Footer = ()=>{
  <h1 className="flex  items-center text-3xl"> <Image alt="logo" src="/m.png" width={70} height={70} className=" dark:bg-transparent"/>ayur.</h1>
  <p className="text-sm ">
   I love working with ambitious people. <br />
-  Let's build something great together now.
+  Lets build something great together now.
  </p>
  </div>
   <div>
