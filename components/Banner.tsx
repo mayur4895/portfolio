@@ -17,15 +17,15 @@ import { RxDownload } from "react-icons/rx";
     return (
   < >
   <div id="home">  
-    <section className="grid place-items-center h-full pt-20 mt-10 px-5"  >
+    <section className="grid place-items-center h-full   md:pt-20 md:mt-10 px-5"  >
 
       
  <main className=" flex  w-full    h-full justify-center items-center">
-     <Image 
-     src={"/bgg.png"}
+     <img 
+     src={"/ban.png"}
      alt="bg"
-     className=" absolute  opacity-[0.15] dark:opacity-5 -z-10   rotate-180  object-cover"
-     fill
+     className=" absolute w-full   dark:opacity-5  opacity-10 -z-10  h-full  object-cover"
+     
      />
  
 
@@ -41,11 +41,12 @@ import { RxDownload } from "react-icons/rx";
         
         </ul>
     <Image
-            className="mt-5  "
+            className="mt-5  lg:h-[300px] lg:w-[300px] "
             src={"/profile.png"}
             alt="pro"
             width={300}
             height={300}
+          
             
             />
     
